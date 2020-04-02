@@ -15,6 +15,8 @@
 		D8265904242D9D3A00904DB9 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8265903242D9D3A00904DB9 /* SearchVC.swift */; };
 		D8265906242D9D5D00904DB9 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8265905242D9D5D00904DB9 /* FavoritesListVC.swift */; };
 		D833D53C24356AAD0026A83D /* GFContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D833D53B24356AAD0026A83D /* GFContainerView.swift */; };
+		D8B2947524365F2200B1142B /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2947424365F2200B1142B /* FollowerCell.swift */; };
+		D8B29477243664EA00B1142B /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B29476243664EA00B1142B /* GFAvatarImageView.swift */; };
 		D8D9B48F242F9F54000A7825 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D9B48E242F9F54000A7825 /* GFTitleLabel.swift */; };
 		D8D9B491242FA744000A7825 /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D9B490242FA744000A7825 /* GFBodyLabel.swift */; };
 		D8D9B493242FA80E000A7825 /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D9B492242FA80E000A7825 /* GFAlertVC.swift */; };
@@ -39,6 +41,8 @@
 		D8265903242D9D3A00904DB9 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		D8265905242D9D5D00904DB9 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		D833D53B24356AAD0026A83D /* GFContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFContainerView.swift; sourceTree = "<group>"; };
+		D8B2947424365F2200B1142B /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
+		D8B29476243664EA00B1142B /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		D8D9B48E242F9F54000A7825 /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		D8D9B490242FA744000A7825 /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		D8D9B492242FA80E000A7825 /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
@@ -94,6 +98,14 @@
 			path = GHFollowers;
 			sourceTree = "<group>";
 		};
+		D8B2947324365EF200B1142B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D8B2947424365F2200B1142B /* FollowerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		D8D9B496242FB381000A7825 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,12 +119,14 @@
 		D8D9B497242FB3B5000A7825 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				D8B2947324365EF200B1142B /* Cells */,
 				D8E1E714242EC00C00AEC01B /* GFButton.swift */,
 				D8E1E716242EC0AD00AEC01B /* GFTextField.swift */,
 				D8D9B48E242F9F54000A7825 /* GFTitleLabel.swift */,
 				D8D9B490242FA744000A7825 /* GFBodyLabel.swift */,
 				D8D9B492242FA80E000A7825 /* GFAlertVC.swift */,
 				D833D53B24356AAD0026A83D /* GFContainerView.swift */,
+				D8B29476243664EA00B1142B /* GFAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -240,6 +254,8 @@
 				D8D9B495242FAE5C000A7825 /* UIViewController+Ext.swift in Sources */,
 				D8265904242D9D3A00904DB9 /* SearchVC.swift in Sources */,
 				D8D9B493242FA80E000A7825 /* GFAlertVC.swift in Sources */,
+				D8B2947524365F2200B1142B /* FollowerCell.swift in Sources */,
+				D8B29477243664EA00B1142B /* GFAvatarImageView.swift in Sources */,
 				D8D9B491242FA744000A7825 /* GFBodyLabel.swift in Sources */,
 				D8D9B49C242FB842000A7825 /* Follower.swift in Sources */,
 				D8D9B48F242F9F54000A7825 /* GFTitleLabel.swift in Sources */,
