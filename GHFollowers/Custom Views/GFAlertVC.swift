@@ -10,14 +10,16 @@ import UIKit
 
 class GFAlertVC: UIViewController {
 
-  let containerView = UIView()
+  let containerView = GFContainerView()
   let titleLabel = GFTitleLabel(textAlignment: .center, fontSize: 20)
   let messageLabel = GFBodyLabel(textAlignment: .center)
   let actionButton = GFButton(backgroundColor: .systemPink, title: "OK")
   
+  
   var alertTitle: String?
   var message: String?
   var buttonTitle: String?
+  
   
   init(title: String, message: String, buttonTitle: String) {
     super.init(nibName: nil, bundle: nil)
@@ -26,11 +28,14 @@ class GFAlertVC: UIViewController {
     self.buttonTitle = buttonTitle
   }
   
+  
   let padding: CGFloat = 20
+  
   
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
+  
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,11 +48,6 @@ class GFAlertVC: UIViewController {
 
   private func congfigureContainerView() {
     view.addSubview(containerView)
-    containerView.backgroundColor = .systemBackground
-    containerView.layer.cornerRadius = 16
-    containerView.layer.borderWidth = 2
-    containerView.layer.borderColor = UIColor.white.cgColor
-    containerView.translatesAutoresizingMaskIntoConstraints = false
     
     NSLayoutConstraint.activate([
       containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -80,6 +80,7 @@ class GFAlertVC: UIViewController {
       actionButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
       actionButton.heightAnchor.constraint(equalToConstant: 44)
     ])
+    
   }
   
   private func configureMessageLabel() {
