@@ -20,9 +20,5 @@ struct User: Codable, Hashable {
   var following: Int
   var followers: Int
   var createdAt: String
-  
-  func hash(into hasher: inout Hasher) {
-     hasher.combine(login)
-   }
 }
 
