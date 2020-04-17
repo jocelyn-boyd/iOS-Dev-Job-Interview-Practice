@@ -10,6 +10,7 @@ import UIKit
 
 fileprivate var containerView: UIView!
 
+
 extension UIViewController {
   
   func presentGFAlertOnMainThread(title: String, message: String, buttonTitle: String) {
@@ -20,6 +21,7 @@ extension UIViewController {
       self.present(alertVC, animated: true)
     }
   }
+  
   
   func showloadingView() {
     containerView = UIView(frame: view.bounds)
@@ -43,10 +45,18 @@ extension UIViewController {
     activityIndicator.startAnimating()
   }
   
+  
   func dismissLoadingView() {
     DispatchQueue.main.async {
       containerView.removeFromSuperview()
       containerView = nil
     }
+  }
+  
+  
+  func showEmptyStateView(with message: String, in view: UIView) {
+    let emtpyStateView = GFEmtpyStateView(message: message)
+    emtpyStateView.frame = view.bounds
+    view.addSubview(emtpyStateView)
   }
 }

@@ -74,7 +74,6 @@
 		D82658E3242D68AE00904DB9 = {
 			isa = PBXGroup;
 			children = (
-				D89F75DF244A141000C49144 /* GFEmtpyStateView.swift */,
 				D82658EE242D68AE00904DB9 /* GHFollowers */,
 				D82658ED242D68AE00904DB9 /* Products */,
 			);
@@ -107,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				D833D53B24356AAD0026A83D /* GFContainerView.swift */,
+				D89F75DF244A141000C49144 /* GFEmtpyStateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
