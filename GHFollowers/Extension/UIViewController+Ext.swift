@@ -55,7 +55,7 @@ extension UIViewController {
   
   
   func showEmptyStateView(with message: String, in view: UIView) {
-    let emtpyStateView = GFEmtpyStateView(message: message)
+    let emtpyStateView = GFEmptyStateView(message: message)
     emtpyStateView.frame = view.bounds
     view.addSubview(emtpyStateView)
   }
