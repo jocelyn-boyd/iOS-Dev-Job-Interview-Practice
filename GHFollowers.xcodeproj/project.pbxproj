@@ -94,7 +94,7 @@
 			children = (
 				D8E67737242FD22B00609B23 /* Utilities */,
 				D8E67734242FC57800609B23 /* Managers */,
-				D8D9B49A242FB832000A7825 /* Models */,
+				D8D9B49A242FB832000A7825 /* Model */,
 				D8D9B497242FB3B5000A7825 /* CustomViews */,
 				D8D9B496242FB381000A7825 /* Screens */,
 				D8D9B498242FB3E3000A7825 /* Extension */,
@@ -207,13 +207,13 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		D8D9B49A242FB832000A7825 /* Models */ = {
+		D8D9B49A242FB832000A7825 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				D8D9B49B242FB842000A7825 /* Follower.swift */,
 				D8D9B49D242FB859000A7825 /* User.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D8E67734242FC57800609B23 /* Managers */ = {
