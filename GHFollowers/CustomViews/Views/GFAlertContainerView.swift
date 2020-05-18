@@ -1,14 +1,14 @@
 //
-//  GFContainerView.swift
+//  GFAlertContainerView.swift
 //  GHFollowers
 //
-//  Created by Jocelyn Boyd on 4/1/20.
+//  Created by Jocelyn Boyd on 5/17/20.
 //  Copyright © 2020 Jocelyn Boyd. All rights reserved.
 //
 
 import UIKit
 
-class GFContainerView: UIView {
+class GFAlertContainerView: UIView {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
