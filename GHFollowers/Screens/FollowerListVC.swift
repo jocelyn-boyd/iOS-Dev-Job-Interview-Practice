@@ -125,7 +125,7 @@ class FollowerListVC: GFDataLoadingVC {
   @objc func addButtonTapped() {
     showloadingView()
     
-    NetworkManager.shared.getUserInfo(for: username) { [weak self ]result in
+    NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
       guard let self = self else { return }
       self.dismissLoadingView()
       
