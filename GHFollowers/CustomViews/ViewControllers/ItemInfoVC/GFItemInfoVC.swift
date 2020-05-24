@@ -9,11 +9,11 @@
 import UIKit
 
 class GFItemInfoVC: UIViewController {
-
-  let stackView = UIStackView()
-  let itemInfoViewOne = GFItemInfoView()
-  let itemInfoViewTwo = GFItemInfoView()
-  let actionButton = GFButton()
+  
+  let stackView 				= UIStackView()
+  let itemInfoViewOne 	= GFItemInfoView()
+  let itemInfoViewTwo 	= GFItemInfoView()
+  let actionButton 		= GFButton()
   
   var user: User!
   
@@ -23,28 +23,30 @@ class GFItemInfoVC: UIViewController {
     self.user = user
   }
   
+  
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      configureBackgroundView()
-      configureActionButton()
-      layoutUI()
-      configureStackView()
-    }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    configureBackgroundView()
+    configureActionButton()
+    layoutUI()
+    configureStackView()
+  }
   
   
   func configureBackgroundView() {
-    view.layer.cornerRadius = 18
-    view.backgroundColor = .secondarySystemBackground
+    view.layer.cornerRadius 	= 18
+    view.backgroundColor 			= .secondarySystemBackground
   }
-
+  
   
   private func configureStackView() {
-    stackView.axis = .horizontal
-    stackView.distribution = .equalCentering
+    stackView.axis 				= .horizontal
+    stackView.distribution 	= .equalCentering
     
     stackView.addArrangedSubview(itemInfoViewOne)
     stackView.addArrangedSubview(itemInfoViewTwo)

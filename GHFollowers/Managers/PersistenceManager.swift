@@ -15,10 +15,7 @@ enum PersistenceActionType {
 enum PersistenceManager {
   
   static private let defaults = UserDefaults.standard
-  
-  enum Keys {
-    static let favorites = "favorites"
-  }
+  enum Keys { static let favorites = "favorites" }
   
   
   static func updateWith(favorite: Follower, actionType: PersistenceActionType, completed: @escaping (GFError?) -> Void) {
@@ -38,6 +35,7 @@ enum PersistenceManager {
         case .remove:
           favorites.removeAll { $0.login == favorite.login}
         }
+        
         completed(save(favorites: favorites))
         
       case .failure(let error):

@@ -14,14 +14,14 @@ protocol UserInfoVCDelegate: class {
 
 class UserInfoVC: GFDataLoadingVC {
   
-  let scrollView = UIScrollView()
-  let contentView = UIView()
+  let scrollView 					= UIScrollView()
+  let contentView 					= UIView()
   
-  let headerView = UIView()
-  let itemViewOne = UIView()
-  let itemViewTwo = UIView()
-  let dateLabel = GFBodyLabel(textAlignment: .center)
-  var itemViews: [UIView] = []
+  let headerView 					= UIView()
+  let itemViewOne 					= UIView()
+  let itemViewTwo 					= UIView()
+  let dateLabel 						= GFBodyLabel(textAlignment: .center)
+  var itemViews: [UIView] 	= []
   
   var username: String!
   weak var delegate: UserInfoVCDelegate!
@@ -36,7 +36,7 @@ class UserInfoVC: GFDataLoadingVC {
   
   func configureViewController() {
     view.backgroundColor = .systemBackground
-    let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
+    let doneButton 			= UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
     navigationItem.rightBarButtonItem = doneButton
   }
   
@@ -77,8 +77,8 @@ class UserInfoVC: GFDataLoadingVC {
   }
   
   func layoutUI() {
-    let padding: CGFloat = 20
-    let itemHeight: CGFloat = 140
+    let padding: CGFloat 		= 20
+    let itemHeight: CGFloat 	= 140
     itemViews = [headerView, itemViewOne, itemViewTwo, dateLabel]
     
     for itemView in itemViews {
